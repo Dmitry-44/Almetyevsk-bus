@@ -17,6 +17,14 @@
 				<a id="burger__btn" href="#"><span></span></a> 
 			</div>
 		</div>
+		<nav id="mobile_nav" class="nav navigation-enter" v-if="mobileMenuIsOpen">
+			<ul class="menu">
+				<li class="menu__item"><NuxtLink class="menu-link"  to="/">Главная</NuxtLink></li>
+				<li class="menu__item"><NuxtLink class="menu-link" activeClass="active" to="/route">Маршрут</NuxtLink></li>
+				<li class="menu__item"><NuxtLink class="menu-link" activeClass="active" to="/price">Тарифы</NuxtLink></li>
+				<li class="menu__item"><NuxtLink class="menu-link" activeClass="active" to="/contacts">Контакты</NuxtLink></li>  
+			</ul>
+		</nav>
     </header>
 </template>
 
@@ -25,13 +33,15 @@ export default {
 
   name: 'Header',
 
-  data(){
-	  
+  data(){ 
+	  return {
+		  mobileMenuIsOpen: false
+	  }
   },
 
   methods:{
 	  openMobileMenu(){
-		  this
+		  this.mobileMenuIsOpen = !this.mobileMenuIsOpen;
 	  }
   }
 

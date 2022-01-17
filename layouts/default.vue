@@ -22,7 +22,7 @@
 <script>
 
 	export default {
-		name: "Default layout",
+		name: "Defaultlayout",
 	}
 </script>
 

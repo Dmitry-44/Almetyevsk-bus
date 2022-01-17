@@ -33,5 +33,8 @@
 <script>
 export default {
   name: 'RoutePage',
+  head: {
+    title: 'Маршрут поездки на автобусе Альметьевск - Уфа'
+  }
 }
 </script>

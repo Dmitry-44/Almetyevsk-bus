@@ -64,5 +64,8 @@
 <script>
 export default {
   name: 'PricePage',
+  head: {
+    title: 'Цены поездки на автобусе Альметьевск - Уфа'
+  }
 }
 </script>

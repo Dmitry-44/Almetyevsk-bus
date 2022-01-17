@@ -14,5 +14,8 @@
 <script>
 export default {
   name: 'ContactsPage',
+  head: {
+    title: 'Контакты поездки на автобусе Альметьевск - Уфа'
+  }
 }
 </script>

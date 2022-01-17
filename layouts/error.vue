@@ -1,15 +1,18 @@
 <template>
-  <v-app dark>
+  <main>
     <h1 v-if="error.statusCode === 404">
-      {{ pageNotFound }}
+	<img src="404.jpg" />
+      <h2>Страница не найдена <br/>
+	  	или такой страницы не существует
+	  </h2>
     </h1>
     <h1 v-else>
       {{ otherError }}
     </h1>
     <NuxtLink to="/">
-      Home page
+      Кликните для перехода на главную
     </NuxtLink>
-  </v-app>
+  </main>
 </template>
 
 <script>
