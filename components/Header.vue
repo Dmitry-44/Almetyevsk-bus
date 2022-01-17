@@ -4,10 +4,10 @@
 			<div class="row row-head">
 				<nav id="nav" class="nav navigation-enter">
 					<ul class="menu">
-						<li class="menu__item"><NuxtLink class="menu-link" to="/">Главная</NuxtLink></li>
-						<li class="menu__item"><NuxtLink class="menu-link" to="/route">Маршрут</NuxtLink></li>
-						<li class="menu__item"><NuxtLink class="menu-link" to="/price">Тарифы</NuxtLink></li>
-						<li class="menu__item"><NuxtLink class="menu-link" to="/contacts">Контакты</NuxtLink></li>  
+						<li class="menu__item"><NuxtLink class="menu-link"  to="/">Главная</NuxtLink></li>
+						<li class="menu__item"><NuxtLink class="menu-link" activeClass="active" to="/route">Маршрут</NuxtLink></li>
+						<li class="menu__item"><NuxtLink class="menu-link" activeClass="active" to="/price">Тарифы</NuxtLink></li>
+						<li class="menu__item"><NuxtLink class="menu-link" activeClass="active" to="/contacts">Контакты</NuxtLink></li>  
 					</ul>
 				</nav>
 			</div>
@@ -39,6 +39,12 @@ export default {
 
 }
 </script>
+
+<style scopped>
+	.menu-link.active{
+		color: #f39c12
+	}
+</style>
 
 <style scoped>
 	header{

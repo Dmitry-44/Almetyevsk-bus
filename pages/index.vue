@@ -12,17 +12,16 @@
                     <p>В наши услуги входит доставка ваших посылок, документов и прочих грузов весом до 200 кг в день поездки от точки отправки до точки прибытия.</p>
                  </div>
              </div>
-             <div class="content__img"> <img src="/main_car.jpg" alt="изображение недоступно">
+             <div class="content__img"> <img src="/main_car.jpg" alt="автомобиль">
             </div>
          </div>
          <div class="content__text_2">
              <p>
-                Расписание и цену поездки на автобус Альметьевск Уфа вы можете узнать в разделе <a class="link link-page" href="prices.html">«Тарифы»</a>.
+                Расписание и цену поездки на автобус Альметьевск Уфа вы можете узнать в разделе <nuxt-link to="/price" class="link link-page">«Тарифы»</nuxt-link>.
              </p>
              <p>
-                На странице <a class="link link-page" href="rout.html">«Маршрут»</a> вы можете узнать, где проезжает и сколько времени уходит на поездку у маршрутного такси Альметьевск Уфа.
-             </p>
-            
+				На странице	<nuxt-link to="/route" class="link link-page">«Маршрут»</nuxt-link> вы можете узнать, где проезжает и сколько времени уходит на поездку у маршрутного такси Альметьевск Уфа.
+            </p>
          </div>
         </div>
     </main>
@@ -30,6 +29,6 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
 }
 </script>

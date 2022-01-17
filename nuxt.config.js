@@ -25,8 +25,15 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
 	'~/asserts/main.css',
-	'~/asserts/media.css'
+	'~/asserts/route.css',
+	'~/asserts/price.css',
+	'~/asserts/contacts.css',
+	'~/asserts/media.css',
   ],
+
+//   router: {
+//     middleware: ['auth']
+//   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
