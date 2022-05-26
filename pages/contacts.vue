@@ -27,6 +27,6 @@ export default {
         return {
             title: 'Телефон для бронирования автобуса',
         }
-    }
+  }
 }
 </script>

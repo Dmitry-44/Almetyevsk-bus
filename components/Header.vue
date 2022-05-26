@@ -2,7 +2,7 @@
 	<header class="header">
 		<div class="container">
 			<div class="row row-head">
-				<nav id="nav" class="nav navigation-enter">
+				<nav id="nav" :class="['nav', isMobileMenuOpen ? 'navigation-enter-active' : 'navigation-enter' ]">
 					<ul class="menu">
 						<li class="menu__item"><a class="menu-link" href="/">Главная</a></li>
 						<li class="menu__item"><a class="menu-link" href="/route">Маршрут</a></li>
@@ -14,7 +14,7 @@
 		</div>
 		<div class="menu__background__mobile menu-active">
 			<div class="burger">
-				<button id="burger__btn"><span></span></button>
+				<button id="burger__btn" :class="{'burger--open' : isMobileMenuOpen}" @click="toggleMobileMenu"><span></span></button>
 			</div>
 		</div>
     </header>
@@ -26,12 +26,14 @@ export default {
   name: 'Header',
 
   data(){
-	  
+	  return {
+		  isMobileMenuOpen: false
+	  }
   },
 
   methods:{
-	  openMobileMenu(){
-		  this
+	  toggleMobileMenu(){
+		  this.isMobileMenuOpen=!this.isMobileMenuOpen
 	  }
   }
 
@@ -59,5 +61,8 @@ export default {
 		right: 0;
 		height: 60px;
 		background-color: #34495e;
+	}
+	.nav {
+		transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1);
 	}
 </style>
