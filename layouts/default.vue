@@ -2,9 +2,7 @@
 	<div>
 		<Header />
 		<main>
-			<div class="container-app">
-				<Nuxt />
-			</div>
+			<Nuxt />
 		</main>
 		<footer class="footer">
 			<div class="footerLeft"><p>Альметьевск</p><span>&copy; {{ new Date().getFullYear() }}</span></div>
@@ -27,10 +25,6 @@
 </script>
 
 <style scoped>
-	.container-app{
-		margin-top: 60px;
-		margin-bottom: 60px
-	}
 
 	.footer{
 		position: fixed;
@@ -40,7 +34,7 @@
 		background-color: #fcfcfc;
 		padding: 0px 30px;
 		font-weight: 600;
-		font-size: 12px;
+		font-size: 15px;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;

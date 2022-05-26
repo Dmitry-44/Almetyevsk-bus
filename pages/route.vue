@@ -1,5 +1,12 @@
 <template>
-	<main class="content">
+<div>
+	<div class="intro_block">
+        <div class="container">
+            <h1>Маршрут и время поездки автобуса <br/>
+			<span class="title-sub">Альметьевск - Уфа</span></h1>
+        </div>
+    </div>
+	<div class="content">
 		<div class="container">
 			<div class="rout">
 					<div class="rout__text rout--first">
@@ -24,14 +31,20 @@
 				</p>
 			</div>
 			<div class="priceInfo">
-			<p>Подробнее с ценами вы можете ознакомиться в разделе <a class="link link-page" href="prices.html">«Тарифы»</a> </p>
+			<p>Подробнее с ценами вы можете ознакомиться в разделе <a class="link link-page" href="/price">«Тарифы»</a> </p>
 			</div>
         </div>
-    </main>
+    </div>
+</div>
 </template>
 
 <script>
 export default {
   name: 'RoutePage',
+  head() {
+        return {
+            title: 'Маршрут автобуса Альметьевск - Уфа - Альметьевск',
+        }
+  }
 }
 </script>

@@ -4,17 +4,17 @@
 			<div class="row row-head">
 				<nav id="nav" class="nav navigation-enter">
 					<ul class="menu">
-						<li class="menu__item"><NuxtLink class="menu-link"  to="/">Главная</NuxtLink></li>
-						<li class="menu__item"><NuxtLink class="menu-link" activeClass="active" to="/route">Маршрут</NuxtLink></li>
-						<li class="menu__item"><NuxtLink class="menu-link" activeClass="active" to="/price">Тарифы</NuxtLink></li>
-						<li class="menu__item"><NuxtLink class="menu-link" activeClass="active" to="/contacts">Контакты</NuxtLink></li>  
+						<li class="menu__item"><a class="menu-link" href="/">Главная</a></li>
+						<li class="menu__item"><a class="menu-link" href="/route">Маршрут</a></li>
+						<li class="menu__item"><a class="menu-link" href="/price">Тарифы</a></li>
+						<li class="menu__item"><a class="menu-link" href="/contacts">Контакты</a></li>  
 					</ul>
 				</nav>
 			</div>
 		</div>
 		<div class="menu__background__mobile menu-active">
 			<div class="burger">
-				<a id="burger__btn" href="#"><span></span></a> 
+				<button id="burger__btn"><span></span></button>
 			</div>
 		</div>
     </header>
@@ -43,6 +43,11 @@ export default {
 <style scopped>
 	.menu-link.active{
 		color: #f39c12
+	}
+	button#burger__btn {
+		background-color: inherit;
+		width: 40px;
+		height: 40px;
 	}
 </style>
 

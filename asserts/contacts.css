@@ -40,3 +40,9 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+.phono-link {
+  color: #ffffff;
+  font-size: 28px;
+  margin-top: 8px;
+  font-weight: 300;
+}

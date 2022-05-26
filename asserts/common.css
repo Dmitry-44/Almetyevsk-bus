@@ -1,0 +1,28 @@
+.container-app{
+    margin-top: 60px;
+    margin-bottom: 60px
+}
+.intro_block {
+    width: 100%;
+    background-color: #34495e;
+    height: fit-content;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 60px 0px;
+    min-height: 230px;
+}
+.pnone-link {
+    color: #ffffff;
+    font-size: 28px;
+    margin-top: 8px;
+    font-weight: 300;
+    transition: 0.4s;
+}
+a.phone-link:hover {
+    color: #f39c12;
+}
+.title-sub {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
