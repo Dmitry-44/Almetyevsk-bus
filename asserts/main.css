@@ -271,7 +271,8 @@ article h2 {
 .content__img img {
   max-width: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
+  border-radius: 6px;
 }
 .content__text_2 {
   font-size: 16px;
